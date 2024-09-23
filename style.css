@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#logo{
+    font-family: cursive;
+}
+
+body > header{
+    background-color: blueviolet;
+    display: flex; 
+        /*this places two elements next to each other*/
+    height: 12vh;
+    justify-content: space-between;
+}
+/*doing it this way so that only the 'parent' header tag is targeted instead of every single one*/
+
+#nav-ul {
+    display: flex;
+}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+}
+
+.navbutton{
+    padding: 12px;
+    border: 1px solid white;
+}
+
+ul {
+    margin: 0px;
+}
+
+
+cite > a {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+
+}
+
+body > main article{
+    width: 70%;
+    margin: auto;
+}
+
+#main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div{
+    width: 70%;
+}
+
+#main-content aside{
+    width: 20%
+}
+img{
+    border-radius: 20%;
+}
+
+/*CSS Layouts include FlexBox or Grid Layout*/
+/*FlexBox allows us to alighn boxes vertically or horizontally - if
+you want to put things next to each other, you need to 'grab' whatever contains
+these items and make that a flex box
+parent element must be a flex box
+to do this we must change the display property which are
+- blocks
+- inline blocks
+- inline elements
+but we can also make them flex or grid*/
+
+
+body > footer {
+    display: flex;
+}
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li{
+    margin-left: 12px;
+}
